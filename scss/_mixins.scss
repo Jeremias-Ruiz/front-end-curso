@@ -1,0 +1,10 @@
+// mixin de stickkky
+
+@mixin pos-sticky($px){
+    position:sticky;
+    top:$px;
+}
+
+@mixin wrapper($color){
+    background-color: $color;
+}

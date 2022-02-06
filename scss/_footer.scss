@@ -1,0 +1,7 @@
+.footer-wrapper{
+    @include wrapper(#e1e5e5);
+    .footer{
+        min-height: 30vh;
+        align-items: center;
+    }
+}

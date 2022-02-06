@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Jeremías Ruiz</title>
+    <meta name="keywords" content="Jeremías Ruiz, Contact">
+    <meta name="description"
+        content="Get in touch with Jeremías Ruiz">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-
-        <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -21,7 +24,7 @@
 <body>
     <nav class="navbar navbar-light fixed-top pt-0">
         <div class="container-fluid navbar-bg">
-            <a class="navbar-brand navbar-brand-self" href="#">jr</a>
+            <a class="navbar-brand navbar-brand-self" href="../index.html">jr</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -49,10 +52,11 @@
             </div>
         </div>
     </nav>
-    <section class="container-self bg-bck contact-container">
-            <h1>contact me</h1>
-            <form class="contact__form">
-                    <fieldset class="form-1">
+    <section class="container-flow contact-wrapper">
+        <div class="contact__container">
+            <h1>contact me</h1> 
+            <form class="contact__form d-flex flex-column">
+                    <fieldset class="contact__form-fieldset d-flex flex-column">
                         <label class="input__label" for="name">name:</label>
                         <input placeholder="name" class="input__text" type="text" name="name" required/>
 
@@ -62,16 +66,19 @@
                         <label class="input__label" for="subject">email</label>
                         <input placeholder="email" class="input__text" type="email" name="subject" required/>
 
+                        
+                    </fieldset>
+                    <fieldset class="contact__form-fieldset line d-flex flex-column">
                         <label class="input__label" for="subject">subject:</label>
                         <input placeholder="subject" class="input__text" type="text" name="subject" required/>
-
-                    </fieldset>
-                    <fieldset class="form-2">
                         <label class="input__label" for="subject" required>message:</label>
                         <textarea placeholder="message" class="input__text-area" type="text" name="subject"></textarea>
                     </fieldset>
-                    <input class="sm__button_bck send" type="submit" value="send"/>
+                    <a><button type="submit" value="send" class="btn btn-secondary my-1">Send</button></a>
+
+
             </form>
+        </div>
     </section>
 
     <a href="https://www.linkedin.com/in/jeremiasruiz/" class="floating floating-contact" target="blank">

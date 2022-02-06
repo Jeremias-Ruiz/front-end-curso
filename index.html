@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremías Ruiz | Doctor & Researcher</title>
+    <!-- metas -->
+    <meta name="keywords" content="Medicine, Anatomy, Artificial inteligence, Augemented reality, Python">
+    <meta name="description"
+        content="Jeremías Ruiz is a doctor, researcher and teacher in the field of medical science. He is also a developer in Python languaje">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="jquery-2.1.4.js"></script>
 
@@ -36,10 +42,10 @@
                 <div class="offcanvas-body offcanvas-body-self">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link nav-link-self"  href="./pages/about.html">about me</a>
+                            <a class="nav-link nav-link-self" href="./pages/about.html">about me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-self"  href="./pages/projects.html">my projects</a>
+                            <a class="nav-link nav-link-self" href="./pages/projects.html">my projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link-self" href="./pages/contact.html">contact me</a>
@@ -49,72 +55,125 @@
             </div>
         </div>
     </nav>
-    <div class="hero__content">
-        <div class="hero__typewrite">
-            <h2 class="typewrite typewrite1"><span class="pink-text">import</span> JeremíasRuiz <span class="pink-text">as</span>
-                <span class="green-text">jr</span>
-            </h2>
-            <p class="typewrite typewrite2"><span class="light-yellow-text">print</span><span class="yellow-text">(</span><span
-                    class="orange-text">'Hello world!'</span><span class="yellow-text">)</span></p>
+    <header class="vh-100 mt-5 container-max d-flex flex-column align-items-center justify-content-center">
+        <div class="mt-5">
+            <h1 class="text-center">Jeremías Ruiz</h1>
+            <h2 class="text-center">Doctor & Researcher</h2>
         </div>
-        <h1 class="hero__title"><span>using technology</span><span>in pursuit of</span>neuroscience</h1>
-    </div>
-    <main class="main">
-        <section class="about">
-            <div class="about__quotes">
-                <div class="about__quote">
-                    <p class="fade-in slide-in from-bottom">I am a doctor and researcher in the field of <strong>neuroscience</strong>.</p>
-                </div>
-                <div class="about__quote">
-                    <p class="fade-in slide-in from-bottom">I work in the National University of Rosario, Argentina and
-                        in asociation with the University of Miami Health System.</p>
-                </div>
-                <div class="about__quote">
-                    <p class="fade-in slide-in from-bottom">I am currently member of few teams, with whom I develop
-                        <strong>artificial intelligence</strong> and <strong>augmented reality</strong>.</p>
-                </div>
+        <video class="img-fluid hero_vid col col-xl-6" autoplay loop muted>
+            <source src="./assets/img/home--herocontent.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </header>
+
+
+    <section class="container-max d-flex flex-column flex-md-row py-5 line">
+
+        <div class="container col-md-5 mb-5 mb-md-0 ">
+            <div class="sticky-about">
+                <h2>hello, i'm Jeremías</h2>
+                <p>I am a doctor, researcher and teacher in the field of medical sciences. I am interested in developing
+                    solutions that incorporate AI and AR to give access to medicine to the entire community.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nam veniam ullam, quod fugiat mollitia
+                    quidem eius maxime qui voluptatibus aperiam distinctio ex esse a, architecto animi rem magnam cum.
+                </p>
+                <a href="./pages/about.html"><button type="button" class="btn btn-primary">More about me</button></a>
+
             </div>
-            <img src="./assets/img/prueba-img.png" alt="Jeremías Ruiz" class="about__img">
-        </section>
-        <section class="article">
-            <div class="article__container">
-                <h3 class="article__tag">Latest pubications</h3>
-                <div class="article__resume">
-                    <span class="lateral_line"></span>
-                    <a class="article__resume__link" href="">
-                        <div>
-                            <h4 class="article__resume__title">Title goes here</h4>
-                            <p class="article__resume__post">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Distinctio temporibus quo reprehenderit, tempora pariatur eos est deleniti soluta
-                                possimus
-                                aut?
-                            </p>
-                        </div>
-                    </a>
+        </div>
+        <aside class="container col-md-5">
+            <div class="post_container">
+                <h4>read the latest articles</h4>
+
+                <a href="./pages/post.html">
+                    <div class="recent_post">
+                        <p class="tag_post">corresponding tags</p>
+                        <p class="title_post">Augmented reality in anatomy</p>
+                    </div>
+                </a>
+                <a href="./pages/post.html">
+                    <div class="recent_post">
+                        <p class="tag_post">corresponding tags</p>
+                        <p class="title_post">Augmented reality in anatomy</p>
+                    </div>
+                </a>
+                <a href="./pages/post.html">
+                    <div class="recent_post">
+                        <p class="tag_post">corresponding tags</p>
+                        <p class="title_post">Augmented reality in anatomy</p>
+                    </div>
+                </a>
+
+
+            </div>
+            <div class="post_container">
+                <h4>further events</h4>
+
+                <a href="./pages/post.html">
+                    <div class="recent_post">
+                        <p class="tag_post">fecha | lugar</p>
+                        <p class="title_post">Título del evento</p>
+                    </div>
+                </a>
+
+                <a href="./pages/post.html">
+                    <div class="recent_post">
+                        <p class="tag_post">fecha | lugar</p>
+                        <p class="title_post">Título del evento</p>
+                    </div>
+                </a>
+                <a href="./pages/post.html">
+                    <div class="recent_post">
+                        <p class="tag_post">fecha | lugar</p>
+                        <p class="title_post">Título del evento</p>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </aside>
+
+    </section>
+
+
+    <footer class="container-fluid footer-wrapper">
+        <div class="container-max footer py-5">
+            <div class="d-flex flex-column flex-md-row">
+                <div class="container col-md-5">
+                    <div class="d-flex flex-row mb-4">
+                        <a href="https://www.linkedin.com/in/jeremiasruiz/" target="blank">
+                            <div class="redes me-2">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Jeremias-Ruiz" target="blank">
+                            <div class="redes">
+                                <i class="fa fa-github"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quam?</q> - Pepe pepito</p>
                 </div>
-                <a href="#" class="sm__button_bck">All publications</a>
+                <ul class="container  col-md-5 fs-3">
+                    <li class=""><a href="./pages/about.html">About me</a></li>
+                    <li class=""><a href="./pages/projects.html">Projects</a></li>
+                    <li class=""><a href="./pages/contact.html">Contact me</a></li>
+                </ul>
             </div>
-        </section>
-        <section class="profile">
-            <div class="profile__container">
-                <img src="#" alt="Jeremías Ruiz" class="profile__photo">
-            </div>
-            <ul class="footer__nav">
-                <li><a href="./pages/about.html">About me</a></li>
-                <li><a href="./pages/projects.html">Projects</a></li>
-                <li><a href="./pages/contact.html">Contact me</a></li>
-            </ul>
-        </section>
-    </main>
-    
+        </div>
+    </footer>
+
     <!-- ------LINKEDIN LINK -->
     <a href="https://www.linkedin.com/in/jeremiasruiz/" class="floating" target="blank">
         <i class="fa fa-linkedin"></i>
     </a>
 
-    <script src="./assets/js/observers.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    
-</body >
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-</html >
+
+</body>
+
+</html>

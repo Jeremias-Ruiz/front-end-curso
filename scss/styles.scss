@@ -1,0 +1,254 @@
+
+
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "mixins";
+@import "components";
+@import "navbar";
+@import "footer";
+
+
+/*BOOSTRAP EDITED*/
+
+body {
+    font-family: $font-family-base;
+    a{
+        text-decoration: none;
+    }
+}
+
+.btn{
+    font-family: $font-family-code;
+        &:active{
+            border: none;
+        }
+        &:focus{
+            border: none;
+        }
+}
+
+
+ul{
+    list-style: none;
+    a{
+    font-family: $font-family-code;
+    text-decoration: none;
+    transition: 1s;
+    opacity: 80%;
+    &:hover{
+        text-decoration: none;
+        opacity: 100%;
+    }
+}
+}
+
+// close
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+//container-site-max-width
+.container-max{
+    @extend .container-md;
+    max-width: 1100px;
+}
+
+
+//scroll-bar
+.scroll-bar-self::-webkit-scrollbar {
+    height:4px
+}
+.scroll-bar-self::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+    border: .5px solid #c5c5c5;
+    
+}
+.scroll-bar-self::-webkit-scrollbar-thumb {
+    background: #0f0f0fcc;
+    border-radius: 10px;
+    border: 1px solid #0f0f0f;
+}
+.scroll-bar-self::-webkit-scrollbar-thumb:hover {
+    background: #0f0f0f
+}
+.scroll-bar-self::-webkit-scrollbar-thumb:active {
+    background: #0f0f0fee
+}
+
+
+//home-sections
+.hero_vid{
+    max-width: 100%;
+    max-height: 60%;
+    @include media-breakpoint-down(xl){
+        max-height: 70%;
+    }
+}
+
+.sticky-about{
+    @include pos-sticky(70px);
+}
+
+.post_container{
+    margin-bottom: 1rem;
+    .recent_post{
+        padding: 15px 0;
+        border-top: 1px solid #0f0f0f13;
+        transform: 350ms;
+        opacity: .9;
+
+        &:hover{
+            opacity: 1;
+        }
+        .tag_post{
+            text-transform: lowercase;
+            font-family: $font-family-code;
+            margin: 0;
+            opacity: .8;
+
+        }
+        .title_post{
+            text-transform:capitalize;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
+
+
+//contact
+.contact-wrapper{
+    @include wrapper($primary);
+    .contact__container{
+        @extend .container-md;
+        @extend .d-flex;
+        @extend .flex-column;
+        min-height: 100vh;
+        max-width: 80%;
+        justify-content: center;
+        align-items: start;
+        margin: auto;
+        @include media-breakpoint-up(md){
+            align-items: center;
+            max-width: 400px
+        }
+        h1{
+            color: $secondary;
+            font-weight: 500;
+            font-family: $font-family-base;
+        }
+        .contact__form{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr;
+            margin: 20px auto;
+            background-color: transparent;
+            color: #f0f0f0;
+            width:100%;
+
+            .contact__form-fieldset{
+                padding: 1rem 0;
+                .line{
+                    border-top: 1px solid $secondary;
+                }
+                .input__label{
+                    display: none;
+                }
+                
+                .input__text,
+                .input__text-area{
+                    margin: 5px 0;
+                    border-radius: 5px;
+                    padding: 5px;
+                    font-family: $font-family-code;
+                    font-size: 1.1rem;
+                    width: 100%;
+
+                    &:focus{
+                    outline: 0;
+                    background-color: #0f0f0f;
+                    color:#f0f0f0;
+                    font-family: $font-family-base;
+                    }
+                }
+                .input__text-area{
+                    resize:vertical;
+                }
+                .send{
+                    cursor:pointer;
+                    margin-top: 5px 0;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+//post
+
+/* --------------------POST */
+.post_title{
+    font-size: 2.5rem;
+    font-weight: 700
+}
+
+.post_title::before{
+    content: "<  ";
+    white-space: pre;
+
+}
+.post_title::after{
+    content: " >";
+    white-space: pre;
+
+}
+
+.post_abstract-border{
+    background-color: rgb(224, 224, 224);
+    padding: 1.5rem 0;
+
+}
+
+.post_header-img{
+    max-height: 600px;
+}
+
+
+.post_header-img{
+        border-radius: .5rem;
+}
+
+@media screen and (min-width: 768px){
+    .post_title{
+        font-size: 3rem;
+    }
+    .post_abstract-border{
+        border-left: 10px solid;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .post_wraper{
+        max-width: 1070px;
+    }
+}
+
+
+.project_date{
+    opacity: .8;
+}
+
+.project_start::before{
+    content:"Project start date: ";
+    font-weight: 500;
+}
+
+
+
+
+
